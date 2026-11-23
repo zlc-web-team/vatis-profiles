@@ -2,7 +2,7 @@
   "name": "ZLC",
   "id": "9a6989d6-f37a-4d10-9aa4-64b1b091b122",
   "updateUrl": "https://raw.githubusercontent.com/zlc-web-team/vatis-profiles/refs/heads/main/vATIS%20Profile%20-%20Salt%20Lake%20(ZLC).json",
-  "updateSerial": 2026112302,
+  "updateSerial": 2026112305,
   "stations": [
     {
       "id": "df8752da-fb9f-4920-96bb-5809313522a4",
@@ -17,7 +17,7 @@
       "atisFormat": {
         "observationTime": {
           "standardUpdateTime": [
-            53
+            52
           ],
           "template": {
             "text": "{time}Z {special}",

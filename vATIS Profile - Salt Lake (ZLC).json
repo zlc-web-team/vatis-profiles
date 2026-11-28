@@ -2,7 +2,7 @@
   "name": "ZLC",
   "id": "9a6989d6-f37a-4d10-9aa4-64b1b091b122",
   "updateUrl": "https://raw.githubusercontent.com/zlc-web-team/vatis-profiles/refs/heads/main/vATIS%20Profile%20-%20Salt%20Lake%20(ZLC).json",
-  "updateSerial": 2026112307,
+  "updateSerial": 2026112701,
   "stations": [
     {
       "id": "df8752da-fb9f-4920-96bb-5809313522a4",
@@ -7281,7 +7281,7 @@
         {
           "id": "e45fe1a2-a472-44ff-b49d-495ef14933c9",
           "name": "VMC SOUTH",
-          "airportConditions": "VISUAL AND INSTRUMENT APCHS IN USE, LDG ILS-Z RWY 19. DEPTG RWY 19. VFR DEPS CTC GND WITH DRCTN OF FLT.",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Z RWY 19. DEPTG RWY 19. VFR DEPS CTC GND WITH DRCTN OF FLT.",
           "notams": "AIRCRAFT THAT FAIL TO TOUCH DOWN IN FIRST THIRD OF RUNWAY ARE AT RISK OF OVERRUN. VFR ACFT AVOID THE RUNWAY EXTENDED CENTERLINE. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -7297,7 +7297,7 @@
         {
           "id": "1de34fa3-bfb2-47f7-9741-c522f7f09419",
           "name": "IMC SOUTH",
-          "airportConditions": "INSTRUMENT APCHS IN USE, LDG RNAV-X/ILS-Y/Z RWY 19 & DEPTG RWY 19.",
+          "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS-Z RWY 19 & DEPTG RWY 19.",
           "notams": "AIRCRAFT THAT FAIL TO TOUCH DOWN IN FIRST THIRD OF RUNWAY ARE AT RISK OF OVERRUN. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -7307,7 +7307,7 @@
         {
           "id": "1320f207-eb75-421d-9185-2f65a65cd276",
           "name": "VMC NORTH",
-          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG VISUAL/RNAV-X/RNAV-Z RWY 1 & DEPTG RWY 1. VFR DEPS CTC GND WITH DRCTN OF FLT.",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG RNAV-X/RNAV-Z RWY 1. DEPTG RWY 1. VFR DEPS CTC GND WITH DRCTN OF FLT.",
           "notams": "AIRCRAFT THAT FAIL TO TOUCH DOWN IN FIRST THIRD OF RUNWAY ARE AT RISK OF OVERRUN. VFR ACFT AVOID THE RUNWAY EXTENDED CENTERLINE. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -7329,8 +7329,9 @@
       "patterns": [],
       "airportConditionDefinitions": [
         {
-          "text": "SITY ALTITUDE",
+          "text": "CHECK DENSITY ALTITUDE",
           "ordinal": 1,
+          "weatherCondition": "temperature >= 26c",
           "enabled": false
         },
         {
@@ -7351,14 +7352,14 @@
           "enabled": false
         },
         {
-          "text": "DO NOT CTC GND FOR PUSHBACK UNLESS IT WILL BE ONTO A TWY.",
+          "text": "ACFT PARKED AT TERMINAL GATES CTC ATC FOR PUSHBACK AS IT WILL BE ONTO A TWY.",
           "ordinal": 2,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "CTC GND WHEN READY FOR TAXI WITH POSITION ON THE ARPT & CURRENT ATIS.",
+          "text": "ACFT PARKED IN GA/FBO RMP CTC ATC WHEN READY FOR TAXI WITH POSITION & CURRENT ATIS.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         }
       ],
       "datisTextReplacements": [],
@@ -9647,8 +9648,8 @@
       "presets": [
         {
           "id": "be677efd-07da-41d6-973b-6466bcb66fd0",
-          "name": "VMC 28R",
-          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS RWY 28R. DEPTG RWYS 28R. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
+          "name": "VMC WEST MAIN",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS RWY 28R, OR VISUAL APCH RWY 28R. DEPTG RWYS 28R. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -9663,8 +9664,8 @@
         },
         {
           "id": "1bc3344c-0d86-4030-afbd-88dbac3ad155",
-          "name": "IMC 28R",
-          "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS 28R & DEPTG RWY 28R.",
+          "name": "IMC WEST MAIN",
+          "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS/RNAV-Z RWY 28R & DEPTG RWY 28R.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -9679,8 +9680,8 @@
         },
         {
           "id": "e4c42581-f57c-49b0-a8cf-1b5b7cd5be1f",
-          "name": "VMC 10L",
-          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Y RWY 10L. DEPTG RWY 10L. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
+          "name": "VMC EAST",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Y RWY 10L, OR VISUAL APCH RWY 10L. DEPTG RWY 10L. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -9689,7 +9690,7 @@
         },
         {
           "id": "a2dfff70-b96b-4215-89ce-0f42464f26cd",
-          "name": "IMC 10L",
+          "name": "IMC EAST",
           "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS-Y RWY 10L & DEPTG RWY 10L.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
@@ -9699,7 +9700,7 @@
         },
         {
           "id": "90ed78a6-da96-4ccf-8fda-419a5e0b6c16",
-          "name": "VMC 28L/28R/25",
+          "name": "VMC WEST ALL",
           "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS RWY 28R, VISUAL RWY 28L, & RNAV RWY 25. DEPTG RWYS 28L, 28R, & 25. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
@@ -9709,8 +9710,8 @@
         },
         {
           "id": "6a0de004-7c33-41cf-b552-d64c83e19446",
-          "name": "VMC 10L/10R/07",
-          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Y RWY 10L, VISUAL RWY 10R & RNAV RWY 7. DEPTG RWYS 10L, 10R, & 7. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
+          "name": "VMC EAST ALL",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Y RWY 10L, VISUAL RWY 10R, & RNAV RWY 7. DEPTG RWYS 10L, 10R, & 7. VFR DEPS CTC DEL WITH DRCTN OF FLT.",
           "notams": "SAID IN USE. OPERATE TRANSPONDERS WITH ALTITUDE REPORTING MODE AND ADS-B (IF EQUIPPED) ENABLED ON ALL AIRPORT SURFACES. READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
@@ -12042,8 +12043,8 @@
         {
           "id": "8767166e-650e-4149-808b-d837505b6ce1",
           "name": "VMC EAST",
-          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG VISUAL/ILS RWY 12, VISUAL RWY 11, & VISUAL RWY 3. DEPTG RWY 12, RWY 11, & RWY 3. VFR DEPS CTC GND WITH DRCTN OF FLT.",
-          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG ILS-Y/RNAV-Z RWY 12, OR VISUAL APCH RWY 11 & RWY 12. DEPTG RWY 11 & 12. VFR DEPS CTC GND WITH DRCTN OF FLT.",
+          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. RWY 11/29 ONLY AUTHORIZED FOR VFR ACFT.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
             "enabled": false,
@@ -12058,8 +12059,8 @@
         {
           "id": "668d4ba9-094c-47dd-8510-b356d4d18fa1",
           "name": "IMC EAST",
-          "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS/RNAV-Z RWY 12 & DEPTG RWY 12.",
-          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. NEW ILS PROCEDURE WITH AIRAC 2601, UPDATE AS OF JANUARY 22ND.",
+          "airportConditions": "INSTRUMENT APCHS IN USE, LDG ILS-Y/RNAV-Z RWY 12 & DEPTG RWY 12.",
+          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
             "enabled": false,
@@ -12074,8 +12075,8 @@
         {
           "id": "721098d8-29c3-4fc9-aa3f-bf1f930a23ed",
           "name": "VMC WEST",
-          "airportConditions": "VISUAL/INSTRUMENT APCHS IN USE, LDG VISUAL/RNAV-Z RWY 30. DEPTG RWY 30. VFR DEPS CTC GND/TWR WITH DRCTN OF FLT.",
-          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS.",
+          "airportConditions": "VISUAL & INSTRUMENT APCHS IN USE, LDG RNAV-Z RWY 30, OR VISUAL APCH RWY 29 & RWY 30. DEPTG RWY 29 & 30. VFR DEPS CTC GND/TWR WITH DRCTN OF FLT.",
+          "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. RWY 11/29 ONLY AUTHORIZED FOR VFR ACFT.",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
             "enabled": false
@@ -12084,7 +12085,7 @@
         {
           "id": "bf945104-add7-4170-99a1-50a49e8ed797",
           "name": "IMC WEST",
-          "airportConditions": "INSTRUMENT APCHS IN USE, LDG RNAV-Y/RNAV-Z RWY 30 & DEPTG RWY 30",
+          "airportConditions": "INSTRUMENT APCHS IN USE, LDG RNAV-Z RWY 30 & DEPTG RWY 30",
           "notams": "READBACK ALL RUNWAY ASSIGNMENTS AND HOLD SHORT INSTRUCTIONS. \n",
           "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS].",
           "externalGenerator": {
